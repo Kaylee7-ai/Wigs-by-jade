@@ -74,6 +74,21 @@
 .craft-panel{min-height:260px;padding:28px}
 .values{grid-template-columns:1fr;gap:10px}
 }
+
+/* Editorial polish for the coursework wig gallery */
+.grid{gap:26px}
+.card{overflow:hidden;border:1px solid #e8dccf;border-radius:5px;background:#fffdf9;box-shadow:0 12px 32px #35101d0c}
+.card:hover{transform:translateY(-7px);box-shadow:0 22px 48px #35101d1c}
+.product-photo{height:330px;object-fit:cover;object-position:center 30%;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.card:hover .product-photo{transform:scale(1.035)}
+.card-body{padding:20px}
+.card-body h3{font-family:'Playfair Display',serif;font-size:21px;letter-spacing:-.02em}
+.card-body p{color:#806d70;line-height:1.65}
+.photo-credit{display:inline-block;margin:3px 0 14px;color:#9a713e;font-size:10px;letter-spacing:.035em;text-decoration:underline;text-underline-offset:3px}
+.hero-photo{object-position:center 38%;filter:saturate(.96) contrast(1.02)}
+@media(max-width:900px){.product-photo{height:280px}}
+@media(max-width:600px){.grid{gap:13px}.product-photo{height:225px}.card-body{padding:13px}.card-body h3{font-size:17px}.photo-credit{font-size:9px}}
+
 </style>
 </head>
 <body>
