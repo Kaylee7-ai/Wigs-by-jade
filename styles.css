@@ -142,3 +142,67 @@ p{margin:0 0 1em;max-width:60ch;color:var(--muted)}
  .mobilebar button{border:0;background:none;color:var(--burgundy-800);font-size:9px;display:grid;gap:3px;justify-items:center}.mobilebar b{font-size:19px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+/* SUPPLIED BURGUNDY LUXURY THEME — final brand overrides
+   The existing HTML uses .hero-shell/.hero-copy/.navlinks/.card classes,
+   so these matching selectors apply the supplied design without breaking
+   the current storefront structure or its JavaScript interactions. */
+:root {
+  --burgundy-900:#3a0f1b;
+  --burgundy-800:#4f1527;
+  --burgundy-700:#6b1e33;
+  --burgundy-600:#832742;
+  --burgundy-500:#9c3454;
+  --burgundy-100:#ecd9dd;
+  --burgundy-50:#f7eef0;
+  --ivory:#fffafa;
+  --ink:#2a1218;
+  --muted:#7d5f67;
+  --gold:#c9a46a;
+  --font-script:"Great Vibes",cursive;
+  --font-display:"Cormorant Garamond",Georgia,serif;
+  --font-body:"DM Sans",system-ui,sans-serif;
+  --radius-sm:12px;
+  --radius-md:20px;
+  --radius-lg:28px;
+  --radius-pill:999px;
+  --shadow-soft:0 10px 30px rgba(107,30,51,.12);
+  --shadow-lift:0 18px 40px rgba(107,30,51,.22);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+body{font-family:var(--font-body);background:var(--burgundy-50);color:var(--ink)}
+h1,h2,h3,h4,.hero-art .editorial strong,.craft-panel strong,.contact-grid h2,.drawer h2,.modal h2,.card-body h3,.cart-row h4,.value b{font-family:var(--font-display)}
+.logo,.footer .logo{font-family:var(--font-script);font-weight:400;letter-spacing:0}
+.nav,.header{background:rgba(255,250,250,.88);border-color:var(--burgundy-100)}
+.navlinks a{color:var(--ink)}
+.navlinks a:hover{color:var(--burgundy-700);border-color:var(--burgundy-700)}
+.button,.smallbtn{border-radius:var(--radius-pill);background:linear-gradient(135deg,var(--burgundy-600),var(--burgundy-800));border-color:var(--burgundy-700)}
+.button:hover,.smallbtn:hover{background:var(--burgundy-900);border-color:var(--burgundy-900)}
+.hero-shell{background:radial-gradient(circle at 85% 20%,rgba(156,52,84,.22),transparent 45%),linear-gradient(160deg,var(--burgundy-50),var(--burgundy-100));box-shadow:var(--shadow-lift)}
+.hero-copy .kicker,.kicker{color:var(--burgundy-600)}
+.hero h1{color:var(--burgundy-800)}
+.hero h1 span,.hero h1 em{color:var(--burgundy-600)}
+.hero-copy p,.muted,.card-body p{color:var(--muted)}
+.hero-art{background:linear-gradient(145deg,var(--burgundy-900),var(--burgundy-600))}
+.art-stamp{border-color:var(--gold);color:#fff0d2}
+.filter{border-color:var(--burgundy-100);background:var(--ivory);color:var(--muted)}
+.filter.active,.filter:hover{background:var(--burgundy-700);border-color:var(--burgundy-700);color:#fff}
+.card{background:var(--ivory);border-color:var(--burgundy-100);box-shadow:var(--shadow-soft)}
+.card:hover{box-shadow:var(--shadow-lift)}
+.card-body h3{color:var(--burgundy-800)}
+.price,.save,.photo-credit{color:var(--burgundy-700)}
+.craft{background:linear-gradient(120deg,var(--burgundy-900),var(--burgundy-700))}
+.craft .kicker{color:var(--gold)}
+.craft-panel{background:linear-gradient(135deg,#f3e5d0,var(--gold));color:var(--burgundy-900)}
+.value{border-color:var(--gold)}
+.value b{color:var(--burgundy-800)}
+.contact-band{background:linear-gradient(120deg,var(--burgundy-100),var(--burgundy-50))}
+.contact-link{border-color:var(--burgundy-100);background:var(--ivory)}
+.contact-link span{color:var(--burgundy-600)}
+.footer{background:var(--burgundy-900)}
+.drawer,.modal{background:var(--ivory)}
+.notice{background:var(--burgundy-100);color:var(--burgundy-900)}
+.mobilebar{background:rgba(255,250,250,.97);border-color:var(--burgundy-100)}
+.mobilebar button{color:var(--burgundy-800)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
